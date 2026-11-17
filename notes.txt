@@ -1,0 +1,114 @@
+COMMANDS
+-----------------
+npx tsc
+node dist/examplevar.js
+
+
+
+TypeScript Primitive Data Types
+===============================
+
+1. number : It allows us to store integers, floating-point numbers, and
+   negative numbers. TypeScript uses one number type for all of them.
+syntax :
+    let variablename: number = value
+  Ex:
+    let eno: number = 101;
+    var sno: number = 102;
+    let price: number = 100.90;
+    const marks: number = -25;
+
+2. string : It allows us to store text, such as letters, words, and sentences.
+syntax :
+    let variablename: string = value
+  Ex:
+    let firstName: string = "Siva";
+    var city: string = "Hyderabad";
+    const message: string = "Hello, TypeScript!";
+
+3. boolean : It allows us to store either true or false.
+syntax :
+    let variablename: boolean = value
+  Ex:
+    let isAvailable: boolean = true;
+    var isLoggedIn: boolean = false;
+    const hasPassed: boolean = true;
+
+4. bigint : It allows us to store integers that are too large for the number
+   type. Add n at the end of an integer value.
+syntax :
+    let variablename: bigint = value
+  Ex:
+    let largeNumber: bigint = 9007199254740993n;
+    const accountNumber: bigint = 12345678901234567890n;
+
+5. symbol : It creates a unique value, often used as a unique object property
+   key. Each call to Symbol() creates a different symbol.
+syntax :
+    let variablename: symbol = Symbol(description)
+  Ex:
+    let userId: symbol = Symbol("userId");
+    const productId: symbol = Symbol("productId");
+
+6. undefined : It represents a value that has not been assigned.
+syntax :
+    let variablename: undefined = undefined
+  Ex:
+    let result: undefined = undefined;
+    const missingValue: undefined = undefined;
+
+7. null : It represents the intentional absence of a value. With strictNullChecks
+   enabled, include null in a variable's type when the variable may be null.
+syntax :
+    let variablename: datatype | null = value
+  Ex:
+    let selectedItem: string | null = null;
+    var userName: string | null = "Siva";
+    const emptyValue: null = null;
+
+Note: void, never, and object are TypeScript types, but they are not primitive
+data types.
+
+
+
+------------------------------------------------------------------------
+Operators in TypeScript
+===============================================================
+Arithmetic: +, -, *, /, %, **
+Assignment: =, +=, -=, *=, /=
+Comparison: ===, !==, >, <, >=, <=
+Logical: &&, ||, !
+Nullish coalescing: ?? — uses a fallback only for null or undefined
+Conditional (ternary): condition ? value1 : value2
+String concatenation: +
+Unary: ++, --, typeof, void
+Bitwise: &, |, ^, ~, <<, >>, >>>
+Property and access: ., [], ?
+
+
+=======================================================================
+Arrays : Array is used to store the values of similar datatyype
+Syntax:
+let arrayname:datatype[]=[value1,value2,......];
+
+EX:
+1.Array of numbers :
+  let marks : number[]= [1,2,3,4]
+2. Array of department names :
+  let departmentNames : String [] = ["cse","ece","csit"];
+
+NOTE
+--------------
+Arrsy index starts at 0.
+mark[0] gives 1 , departmentNames[0]:"cse"
+
+Array Methods:
+ 1. push() -> appends at last to the array
+ 2. unshift() -> appends at the beginning of the array
+ 3. pop() -> removes the last element from the array
+ 4. shift() -> removes the first element from the array
+ 5.splice(start index, no of elements delete, values)
+ EX : arrayname.splice(1,0,10)
+ 6. length -> check the number of elements in an array
+ 7. Slice() -> Extracts the contents from the Array
+      slice(start index,end index)dont include end index value
