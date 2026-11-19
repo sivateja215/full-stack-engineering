@@ -112,3 +112,34 @@ Array Methods:
  6. length -> check the number of elements in an array
  7. Slice() -> Extracts the contents from the Array
       slice(start index,end index)dont include end index value
+
+
+=====================================================================
+                        Functions
+=====================================================================
+It is block of reusable code used for specific task.
+Syntax:
+function functionname (paramenters):returntype
+{
+    //block of statements
+} 
+To call the function use the functionname
+functionname(values)
+Ex:
+function display():void
+{
+    console.log("display function");
+}
+display(); //calling
+
+EX 2: //function with paramenters
+function display(message:string):void{
+  console.log(`The given message ${message}`);
+}
+display("welcome")//calling the function
+
+=====================================================================
+                        Tuples 
+====================================================================
+Tuples will store the data in the format we specify.
+synatx : let varname:[datatype1,datatype2,datatype3,...] = [value1,value2,value3,...];
