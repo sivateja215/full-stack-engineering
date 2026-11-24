@@ -143,3 +143,30 @@ display("welcome")//calling the function
 ====================================================================
 Tuples will store the data in the format we specify.
 synatx : let varname:[datatype1,datatype2,datatype3,...] = [value1,value2,value3,...];
+=========================================
+              OBJECT
+======================================
+It is an instance of the class
+syntax:   let objectname = new classname();
+ex:
+          let book = new Book();
+
+The object is used to access the methods of the class
+Ex:
+      book.display();
+
+-----------------------------------------------
+          CONSTRUCTORS
+-----------------------------------------------
+1.It is a method which is used to intialize the values
+2.Constructors are invoked when an object is created(no explicit call is required)
+SYNTAX :
+    class classname{
+      constructor(){
+        //intilaize the values
+      }
+    }
+
+3. Constructor will not return any value
+Ex: Create a class Employee with eno and enameare properties.
+Intialize with constructor and display the information
